@@ -1,0 +1,23 @@
+Package: PLHT
+Title: a PCA-based Linear Holistic Trajectory (PLHT) method to measure the postnatal development level for mouse intestinal Epithelium/Fibroblast     
+Version: 1.0.0
+Authors@R: 
+    person("Shaorui", "Liu", , "liushaorui@mail.bnu.edu.cn", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-8451-0346"))
+Description: Using mouse intestinal scRNAseq WT data (Epcam+ Epithelial & Pdgfra+ Mesenchymal) and trajectory features merged/filtered from stage-DEGs (P00-P07-P14-P21-P28), we have built a PCA-based linear model to regress A holistical time coordinate along postnatal development, which could be applied to the comparison of maturity level between CTL-vs-CKO, as well within any other normalized singlecell or bulk transcriptome datasets. 
+URL: https://github.com/Ruismart/PLHT
+BugReports: https://github.com/Ruismart/PLHT/issues
+Depends:
+    R (>= 4.0.0)
+Imports:
+    stats
+Suggests:
+    knitr,
+    rmarkdown,
+    seurat (>= 4.0.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.0
+VignetteBuilder: knitr
+LazyData: true
